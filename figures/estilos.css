@@ -1,0 +1,45 @@
+html, body{
+	background-color: #eee;
+	font-family: Arial, sans-serif;
+	color: #ee4630; 
+}
+h1{
+	text-align: center;
+	display: inline-block;
+}
+.container{
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+}
+.diamante{
+	display: inline-block;
+	border-style: solid;
+	border-color: transparent transparent transparent transparent;
+	border-width: 0 25px  25px  25px ;
+	height: 0;
+	width: 50px;
+	position: relative;
+	margin: 20px 0 50px 0;
+}
+.diamante:after{
+	content: "";
+	position: absolute;
+	top: 25px;
+	left: -25px;
+	width: 0;
+	height: 0;
+	border: solid;
+	border-color: red transparent transparent transparent;
+	border-width: 80px 50px 0 50px;
+}
+.button{
+	width: 120px;
+	height: 50px;
+	background-color: #ee4630;
+	margin-top: 25px;
+	border-radius: 10px;
+	border: solid;
+	border-color: #ee4630 transparent red transparent;
+	border-width: 0px 8px 8px 8px; 
+}
